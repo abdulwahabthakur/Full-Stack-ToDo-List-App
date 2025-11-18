@@ -71,25 +71,4 @@ npm start
 - If the backend responds with `EADDRINUSE` (address in use) when starting, either stop the process using that port or modify the `PORT` constant in `server/server.js`.
 - If the frontend cannot reach the backend, make sure the backend is running and there is no firewall blocking `localhost` ports.
 
-**Development Tips**
-- Server logs are printed to the console by `server.js`. You can run the server with `nodemon` during development by installing `nodemon` globally or using the `dev` script in `server/package.json` (`npm run dev`).
-- The backend uses a simple JSON file for persistence. For production or multi-user scenarios, consider replacing it with a proper database (SQLite, PostgreSQL, MongoDB, etc.).
-
-**Contributing**
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feat/my-feature`
-3. Commit changes and push
-4. Open a pull request describing your changes
-
-**License**
-This project is open-source — add a license file as needed (e.g., `MIT`).
-
----
-
-If you want, I can:
-- Add a short `README` for `server/` specifically with commands
-- Add an example `todos.json` sample file
-- Add instructions to run both frontend and backend concurrently (using `concurrently` or `npm-run-all`)
-
-Which of those would you like next?
 
